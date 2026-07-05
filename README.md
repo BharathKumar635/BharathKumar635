@@ -164,28 +164,7 @@ Built Apex-based backend automations, improving CRM workflow efficiency by **20%
 
 ---
 
-name: generate animated snake
 
-on:
-  schedule:
-    - cron: "0 */6 * * *"   # runs every 6 hours
-  workflow_dispatch: {}      # lets you trigger it manually from the Actions tab
-  push:
-    branches: [ main ]       # regenerates whenever you push to main
-
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    steps:
-      - name: generate snake svg
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: BharathKumar635
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       - name: push svg to the output branch
         uses: crazy-max/ghaction-github-pages@v4
