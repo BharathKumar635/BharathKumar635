@@ -164,28 +164,36 @@ Built Apex-based backend automations, improving CRM workflow efficiency by **20%
 
 ---
 
-## 🐍 Contribution Snake
+name: generate animated snake
 
-<div align="center">
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # runs every 6 hours
+  workflow_dispatch: {}      # lets you trigger it manually from the Actions tab
+  push:
+    branches: [ main ]       # regenerates whenever you push to main
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BharathKumar635/BharathKumar635/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/BharathKumar635/BharathKumar635/output/github-contribution-grid-snake.svg">
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/BharathKumar635/BharathKumar635/output/github-contribution-grid-snake-dark.svg" />
-</picture>
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: generate snake svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: BharathKumar635
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-</div>
-
----
-
-<div align="center">
-
-*"Simple, working code beats clever, broken code — ship it, then improve it."*
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" />
-
-</div>
-
+      - name: push svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 <!--
 SETUP NOTES (delete once done):
 
