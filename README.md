@@ -7,7 +7,7 @@
 <div align="center">
 
 ![Profile Views](https://komarev.com/ghpvc/?username=BharathKumar635&style=for-the-badge&color=8245ec&label=PROFILE+VIEWS)
-![Focus](https://img.shields.io/badge/FOCUS-Gen%20AI%20%7C%20PERN%20Stack%20%7C%20Backend-blueviolet?style=for-the-badge)
+![Focus](https://img.shields.io/badge/FOCUS-Gen%20AI%20%7C%20REACT%20JS%20%7C%20Backend-blueviolet?style=for-the-badge)
 ![Stack](https://img.shields.io/badge/STACK-PostgreSQL%20%7C%20Express%20%7C%20React%20%7C%20Node-238636?style=for-the-badge)
 ![Based In](https://img.shields.io/badge/BASED%20IN-India-FF9933?style=for-the-badge)
 
@@ -36,7 +36,7 @@
 
 <img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="260" alt="Backend Developer" />
 
-- 🎓 B.Tech Computer Science Engineering @ **SRM University AP** · CGPA **8.46** · Graduating 2027
+- 🎓 B.Tech Computer Science Engineering @ **SRM University AP** · CGPA **8.47** · Graduating 2027
 - 🧠 Strong in **Gen AI / ML** — built an end-to-end Sepsis Risk Prediction system with a full ML pipeline served through a live REST API, achieving **99.4% accuracy**
 - ⚙️ Strong in the **PERN Stack** (PostgreSQL, Express.js, React.js, Node.js) — designed and shipped full-stack, production-style applications from scratch
 - 🚀 Genuinely interested in **Software Product Development** — I like owning problems end-to-end: design, backend, API, and shipping something real
