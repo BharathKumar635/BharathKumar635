@@ -17,7 +17,7 @@
 
 <div align="center">
 
-> *Building Gen AI-powered systems and production-grade PERN stack applications, with an eye toward real software products.*
+> *Building Gen AI-powered systems and production-grade MERN stack applications, with an eye toward real software products.*
 
 </div>
 
